@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form{
+    height: 600px;
+    width: 500px;
+    border: 2px solid black;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.title-login-page{
+    text-align: center;
+    font-size: 250%;
+    font-weight: 800;
+    margin-top: 1%;
+    font-family: 'Lilita One', cursive;
+    background: linear-gradient(to right, rgb(5, 107, 5) 0%,red 20%,  orange 61%), linear-gradient( yellow 52%, rgb(5, 107, 5) 60%,rgb(5, 107, 5) 61%); /* you can change the colors based on your preference */
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: wave 2000ms ease alternate infinite;
+    transition: all 0.4s ease;
+ }
+ @keyframes wave {
+    0% {
+    background-position: 0 0;
+    }
+    100% {
+    background-position: 50vw 10px;
+ }}
+ 
+
+ .logo{
+    height:65px;
+    width: 95px;
+    width: calc(50% -20px);
+ }

@@ -14,18 +14,25 @@ body{
 }
 .form{
     height: 600px;
-    width: 500px;
-    border: 2px solid black;
+    width: 600px;
+    border: 1px solid black;
     display: flex; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    position: relative;
+    top: -250px;
+    right: -90px;
+    z-index: 3;
+    background-color: whitesmoke;
 }
 
 .title-login-page{
     text-align: center;
     font-size: 250%;
     font-weight: 800;
-    margin-top: 1%;
+    /* margin-top: -3%; */
     font-family: 'Lilita One', cursive;
     background: linear-gradient(to right, rgb(5, 107, 5) 0%,red 20%,  orange 61%), linear-gradient( yellow 52%, rgb(5, 107, 5) 60%,rgb(5, 107, 5) 61%); /* you can change the colors based on your preference */
     background-clip: text; 
@@ -44,7 +51,78 @@ body{
  
 
  .logo{
-    height:65px;
+    height:75px;
     width: 95px;
-    width: calc(50% -20px);
+    /* width: calc(30% -10px); */
  }
+
+ .form-row{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    font-size: 30px;
+ }
+
+ input{
+    height: 40px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+
+ label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    font-weight: 900;
+    font-family: 'Lilita One', cursive;
+
+ }
+
+ .top-title{
+    display: flex;
+    margin-top: -30%;
+ }
+
+ .btn{
+    height: 40px;
+    width: 300px;
+    margin-top: 60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: -70px;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Lilita One', cursive;
+
+ }
+.btn-block{
+border-top: 2px solid black;
+border-bottom: 2px solid gray;
+border-right: 2px solid gray;
+background-color: white;
+}
+.btn-block:hover{
+    background-color: whitesmoke;
+    font-size: 22px;
+    cursor: pointer;
+}
+.child-container{
+    position: relative;
+    bottom: -700px;
+    z-index: 1;
+}
+
+img{
+    background-clip: initial;
+    animation: animate 6s linear infinite;
+
+ }
+ @keyframes animate {
+    0% {
+    background-position: 0 -20px ;
+    }
+    100% {
+    background-position:  (100deg);
+ }}
+
+
+ 

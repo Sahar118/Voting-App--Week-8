@@ -1,7 +1,7 @@
 // import { RiUser5Line } from 'react-icons/ri'
 // import { Login } from './Pages/index'
 // import name from 'module';
-import { Login } from "./Pages";
+import Login from "./pages/Login.page";
 
 import './styles/styled/App.css';
 
